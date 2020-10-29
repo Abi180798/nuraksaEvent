@@ -51,7 +51,7 @@ class TahuraEvent(Base):
 
   def setTanggalEvent(self,newTanggalE):
     if newTanggalE is not None and newTanggalE:
-      self.tanggal_event=datetime.strptime(newTanggalE,"%d-%m-%Y")
+      self.tanggal_event=datetime.strptime(newTanggalE,"%d-%m-%Y, %H:%M")
   
   @staticmethod
   def update(event:EventModel,id):

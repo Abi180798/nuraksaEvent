@@ -18,7 +18,7 @@ class TahuraEvent(Base):
       judul_event = event.judul_event,
       deskripsi_event = event.deskripsi_event,
       gambar_event = event.gambar_event,
-      tanggal_event = datetime.strptime(event.tanggal_event,"%d-%m-%Y"),
+      tanggal_event = datetime.strptime(event.tanggal_event,"%d-%m-%Y, %H:%M"),
       tanggal_post = datetime.now()
     )
   

@@ -6,8 +6,9 @@ class EventBaseModel(BaseModel):
     id_event : Optional[int] = Field(description="event id, generate from server")
     judul_event : str = Field(description="judul event name")
     deskripsi_event : str = Field(description="description event")
-    gambar_event : str = Field(description="gambar event")
-    tanggal_post : Optional[datetime] = Field(description="tanggal event")
+    gambar_event : Optional[str] = Field(description="gambar event")
+    tanggal_event : datetime = Field(description="tanggal event")
+    tanggal_post : Optional[datetime] = Field(description="tanggal post")
 
     class Config:
       orm_mode=True
